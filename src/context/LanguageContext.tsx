@@ -326,7 +326,22 @@ export const DICTIONARY_EN_TO_BN: Record<string, string> = {
   'Stop Camera': 'ক্যামেরা বন্ধ করুন',
   'Push to Hospital Triage': 'রোগীর চার্টে পুশ করুন',
   'Call 999 Emergency': 'জরুরি ৯৯৯ কল দিন',
-  'Close Turjuman': 'তর্জমান বন্ধ করুন'
+  'Close Turjuman': 'তর্জমান বন্ধ করুন',
+
+  // Telemetry & Master Hub Simplifications
+  'Connected Hospital Network • Live Data Sync': 'সংযুক্ত হাসপাতাল নেটওয়ার্ক • রিয়েল-টাইম ডাটা সিঙ্ক',
+  'Triage Active': 'ট্রায়াজ সক্রিয়',
+  'Automatic Health Scoring • Fast Doctor Routing': 'স্বয়ংক্রিয় স্বাস্থ্য স্কোরিং • দ্রুত ডাক্তার বরাদ্দ',
+  'Blood & Chemistry Analyzers Active': 'রক্ত ও বায়োকেমিস্ট্রি বিশ্লেষক সচল',
+  'Instant Lab Results • Urgent Doctor Alerts': 'তাৎক্ষণিক ল্যাব রিপোর্ট • ডাক্তারকে জরুরী সতর্কতা',
+  'Continuous Oxygen Tracking • Clean Air Isolation': 'অবিচ্ছিন্ন অক্সিজেন মনিটরিং • পরিচ্ছন্ন বাতাস আইসোলেশন',
+  'Safe Pressure': 'নিরাপদ চাপ',
+  'Hospital Oxygen Tank: 98.4% Full': 'হাসপাতাল অক্সিজেন ট্যাংক: ৯৮.৪% পূর্ণ',
+  'Backup Generator Ready • Clean Air Ventilation': 'ব্যাকআপ জেনারেটর প্রস্তুত • ভেন্টিলেশন সচল',
+  'VERIFIED LOGS': 'যাচাইকৃত লগ',
+  'Patient Master Records & Change History': 'রোগীর মূল ডাটাবেজ ও পরিবর্তনের ইতিহাস',
+  'Complete history tracking every medicine dispensed, prescription written, and record update.': 'প্রতিটি ওষুধ বিতরণ, প্রেসক্রিপশন প্রদান ও রেকর্ড পরিবর্তনের পূর্ণাঙ্গ নির্ভরযোগ্য ইতিহাস।',
+  'Open Master Records': 'মূল রেকর্ড দেখুন'
 };
 
 // Sorted multi-word phrases for greedy replacement

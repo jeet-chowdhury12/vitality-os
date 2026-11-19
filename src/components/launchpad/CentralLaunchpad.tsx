@@ -185,7 +185,7 @@ export function CentralLaunchpad({
               </span>
             </div>
             <span className="text-[10px] font-mono text-emerald-400 font-bold bg-emerald-950/60 px-3 py-1 rounded-full border border-emerald-800/80">
-              DGHS FHIR R4 Core • Active Inter-Hub Bus
+              Connected Hospital Network • Live Data Sync
             </span>
           </div>
 
@@ -200,10 +200,10 @@ export function CentralLaunchpad({
                   <ClipboardList className="w-3.5 h-3.5 text-emerald-400" />
                   <span>Emergency Triage</span>
                 </span>
-                <span className="px-1.5 py-0.5 rounded text-[9px] font-mono font-bold bg-emerald-900/60 text-emerald-300">ESI 1-5 Active</span>
+                <span className="px-1.5 py-0.5 rounded text-[9px] font-mono font-bold bg-emerald-900/60 text-emerald-300">Triage Active</span>
               </div>
               <div className="font-extrabold text-white text-xs group-hover:text-emerald-300 transition">Bay 02 • Immediate Intake</div>
-              <p className="text-[10px] font-mono text-slate-400">NEWS2 Auto-Scoring • Multi-Doctor Routing</p>
+              <p className="text-[10px] font-mono text-slate-400">Automatic Health Scoring • Fast Doctor Routing</p>
             </div>
 
             {/* 2. Automated Diagnostic Laboratory */}
@@ -216,10 +216,10 @@ export function CentralLaunchpad({
                   <FlaskConical className="w-3.5 h-3.5 text-sky-400" />
                   <span>Pathology &amp; Biochemistry</span>
                 </span>
-                <span className="text-[9px] font-mono text-sky-300">COM4 Online</span>
+                <span className="text-[9px] font-mono text-sky-300">Online</span>
               </div>
-              <div className="font-extrabold text-white text-xs group-hover:text-sky-300 transition">Sysmex &amp; Roche Cobas Active</div>
-              <p className="text-[10px] font-mono text-slate-400">Automated Serial Stream • Panic Alerts</p>
+              <div className="font-extrabold text-white text-xs group-hover:text-sky-300 transition">Blood &amp; Chemistry Analyzers Active</div>
+              <p className="text-[10px] font-mono text-slate-400">Instant Lab Results • Urgent Doctor Alerts</p>
             </div>
 
             {/* 3. Inpatient Bed & ICU Matrix */}
@@ -235,7 +235,7 @@ export function CentralLaunchpad({
                 <span className="text-[9px] font-mono text-amber-300">12 Available</span>
               </div>
               <div className="font-extrabold text-white text-xs group-hover:text-amber-300 transition">60 Beds • 48 Occupied (80%)</div>
-              <p className="text-[10px] font-mono text-slate-400">High-Flow O2 Monitored • Negative Pressure</p>
+              <p className="text-[10px] font-mono text-slate-400">Continuous Oxygen Tracking • Clean Air Isolation</p>
             </div>
 
             {/* 4. Biomedical Plant & Oxygen Telemetry */}
@@ -248,10 +248,10 @@ export function CentralLaunchpad({
                   <Droplet className="w-3.5 h-3.5 text-teal-400" />
                   <span>Medical Gas Plant</span>
                 </span>
-                <span className="text-[9px] font-mono text-teal-300">4.2 Bar OK</span>
+                <span className="text-[9px] font-mono text-teal-300">Safe Pressure</span>
               </div>
-              <div className="font-extrabold text-white text-xs group-hover:text-teal-300 transition">Bulk LMO Tank: 98.4% Full</div>
-              <p className="text-[10px] font-mono text-slate-400">Backup Diesel Ready • 14.8 ACH HVAC</p>
+              <div className="font-extrabold text-white text-xs group-hover:text-teal-300 transition">Hospital Oxygen Tank: 98.4% Full</div>
+              <p className="text-[10px] font-mono text-slate-400">Backup Generator Ready • Clean Air Ventilation</p>
             </div>
           </div>
         </div>
@@ -692,14 +692,14 @@ export function CentralLaunchpad({
                   <div className="w-8 h-8 rounded-xl bg-slate-800 text-teal-300 flex items-center justify-center">
                     <ShieldCheck className="w-4 h-4" />
                   </div>
-                  <span className="text-[9px] font-bold px-2 py-0.5 rounded bg-slate-800 text-slate-300">21 CFR PART 11</span>
+                  <span className="text-[9px] font-bold px-2 py-0.5 rounded bg-slate-800 text-slate-300">VERIFIED LOGS</span>
                 </div>
-                <h4 className="text-xs font-bold group-hover:text-teal-300 transition-colors">Master Hub &amp; Immutable Audit Trail</h4>
+                <h4 className="text-xs font-bold group-hover:text-teal-300 transition-colors">Patient Master Records &amp; Change History</h4>
                 <p className="text-[11px] text-slate-400 mt-1 leading-relaxed">
-                  Cryptographically hashed audit log tracking every medication dispensing, doctor prescription, and EHR alteration.
+                  Complete history tracking every medicine dispensed, prescription written, and record update.
                 </p>
                 <div className="mt-2 text-[10px] text-teal-400 font-bold flex items-center gap-1">
-                  <span>Inspect Audit Ledger</span> &rarr;
+                  <span>Open Master Records</span> &rarr;
                 </div>
               </div>
             </div>
