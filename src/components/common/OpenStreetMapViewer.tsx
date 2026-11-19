@@ -74,20 +74,20 @@ export const OpenStreetMapViewer: React.FC<OpenStreetMapViewerProps> = ({
   const [viewMode, setViewMode] = useState<MapViewMode>(defaultStyle);
   const [is3DMode, setIs3DMode] = useState<boolean>(false);
 
-  // Tile URL resolver
+  // Tile URL resolver - 100% Free, Zero API Key, Zero Watermark
   const getTileUrl = useCallback((mode: MapViewMode) => {
     switch (mode) {
       case 'liberty':
-        // CartoDB Voyager / Liberty OpenFree style (fast, global CDN, clean aesthetics)
-        return 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
+        // High-DPI clean street map with ZERO API KEY and ZERO WATERMARKS (ESRI World Street / OpenFree style)
+        return 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}';
       case 'bright':
-        // OpenStreetMap Standard Bright
-        return 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+        // Official OpenStreetMap Standard (Fast, open, zero watermark)
+        return 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
       case 'positron':
-        // Dark Matter / Positron
-        return 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
+        // Deep Dark Canvas (Zero watermark, night emergency mode)
+        return 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}';
       default:
-        return 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
+        return 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}';
     }
   }, []);
 
@@ -113,7 +113,7 @@ export const OpenStreetMapViewer: React.FC<OpenStreetMapViewerProps> = ({
 
     // Add minimal attribution
     L.control.attribution({ position: 'bottomright', prefix: false })
-      .addAttribution('&copy; <a href="https://openfreemap.org" target="_blank" style="color:#0ea5e9;font-weight:700;">OpenFreeMap</a> • <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>')
+      .addAttribution('&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" style="color:#0ea5e9;font-weight:700;">OpenStreetMap</a> • OpenFreeMap')
       .addTo(map);
 
     // Initial tile layer
